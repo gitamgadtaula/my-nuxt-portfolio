@@ -7,8 +7,13 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+     "start": "node server.js"
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "13.7.0",
+    "npm": "6.13.6"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
